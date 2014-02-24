@@ -1,0 +1,28 @@
+{{#def.loadfile('inc/layout.dot')}}
+{{##def.content:    <p>Express &ndash; Fotogalerie!</p>
+    <p>Strana {{=it.pager.page}} z {{=it.pager.last_pg}} celkem {{=it.pager.count}} fotek po {{=it.pager.limit}} fotografiích.</p>
+    <ul class="pager">{{? it.pager.prew_pg}}<li><a href="/library/page/{{=it.pager.sort_by}}/{{=it.pager.limit}}/{{=it.pager.prew_pg}}">&lt;&lt;&lt; </a></li>{{?}}
+      <li>
+        {{~it.pagenums :number}}<a href="/library/page/{{=it.pager.sort_by}}/{{=it.pager.limit}}/{{=number}}"> |{{=number}}| </a>{{~}}
+      </li>
+      {{? it.pager.next_pg}}<li><a href="/library/page/{{=it.pager.sort_by}}/{{=it.pager.limit}}/{{=it.pager.next_pg}}"> &gt;&gt;&gt;</a></li>{{?}}
+    </ul>
+    <div id="media-list">
+      {{~it.media :item}}<ul class="media" title="{{=item.name}}">
+        <li>
+          <a href="/display/{{=item.file_id}}/full">
+            <img src="/display/{{=item.file_id}}/thumb" alt="{{=item.name}}" title="{{=item.name}}">
+          </a>
+        </li>
+        <li>
+          <a href="/media/{{=item.file_id}}/delete" class="rem" title="Vymazat fotografii">Vymaž</a>
+        </li>
+      </ul>{{~}}
+    </div>
+    <ul class="pager">{{? it.pager.prew_pg}}
+      <li><a href="/library/page/{{=it.pager.sort_by}}/{{=it.pager.limit}}/{{=it.pager.prew_pg}}">&lt;&lt;&lt; </a></li>{{?}}
+      <li>
+        {{~it.pagenums :number}}<a href="/library/page/{{=it.pager.sort_by}}/{{=it.pager.limit}}/{{=number}}"> |{{=number}}| </a>{{~}}
+      </li>
+      {{? it.pager.next_pg}}<li><a href="/library/page/{{=it.pager.sort_by}}/{{=it.pager.limit}}/{{=it.pager.next_pg}}"> &gt;&gt;&gt;</a></li>{{?}}
+    </ul>#}}

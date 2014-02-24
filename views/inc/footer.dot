@@ -1,0 +1,4 @@
+    <div id="footer">
+      {{? it.user}}<p>Přihlášený uživatel: {{=it.user}}</p>{{?}}
+      <p><strong>Fotokrám - žádná práva nevyhrazena 2013</strong></p>
+    </div>

@@ -1,0 +1,16 @@
+{{#def.loadfile('inc/layout.dot')}}
+{{##def.content:
+    <p>Opravdu chcete vymazat obrázek {{=it.file_id}} ?<p>
+    <ul class="media">
+      <li>
+        <a href="/display/{{=it.file_id}}/full">
+          <img src="/display/{{=it.file_id}}/thumb" alt="Vymazat ?" title="Vymazat ?">
+        </a>
+      </li>
+    </ul>
+    <form method="post">
+      <p><input type="checkbox" value="yes" name="confirm">
+      Ano a jsem si vědom následků !</p>
+      <p><input type="submit" value="Vymazat"></p>
+    </form>
+#}}

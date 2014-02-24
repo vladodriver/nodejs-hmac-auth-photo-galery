@@ -1,0 +1,3 @@
+{{#def.loadfile('inc/layout.dot')}}
+{{##def.content:    <h1>Přístup k obsahu odepřen!</h1>
+    <p>Je potřeba se přihlásit !!!</p>#}}

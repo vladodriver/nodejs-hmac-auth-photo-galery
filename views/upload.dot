@@ -1,0 +1,6 @@
+{{#def.loadfile('inc/layout.dot')}}
+{{##def.content:    <p>Vícenásobný upload fotografie</p>
+    <form method="post" enctype="multipart/form-data">
+      <p><input type="file" name="media" multiple="multiple"></p>
+      <p><input type="submit" value="Nahrát"></p>
+    </form>#}}

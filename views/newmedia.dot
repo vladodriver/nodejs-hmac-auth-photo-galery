@@ -1,0 +1,9 @@
+{{#def.loadfile('inc/layout.dot')}}
+{{##def.content:<h3>Upload médií byl dokončen v pořadí: </h3>{{~it.queue :val :idx}}
+    <p>{{=idx + 1}}. {{=val.sorted}} {{='> >'}} dokončeno za: {{=it.times[it.sorted.indexOf(val)] / 1000}} sec</p>{{~}}
+    <h3>Seřazené výsledky: </h3>{{~it.sorted :val :idx}}
+    <p>{{=idx + 1}}. {{=val.sorted}} {{='> >'}} dokončeno za: {{=it.times[idx] / 1000}} sec</p>{{~}}
+    {{? it.errors}}<h3>Při zpracování se vyskytly tyto chyby: </h3>{{~it.errors :err :idx}}
+    <p>{{=idx + 1}}. {{=err}}{{~}}{{?}}
+    <h3>Časy</h3>
+    <p>{{=it.times}}</p>#}}

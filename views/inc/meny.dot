@@ -1,0 +1,5 @@
+    <ul id="meny">
+      <li><a href="/" title="Domů">Domů</a></li>
+      <li><a href="/upload" title="Nahrát fotografii">Nahrát foto</a></li>
+      <li>{{?it.user}}<a href="/logout" title="Odhlásit">Odhlásit</a> {{?}}{{?!it.user}} <a href="/login" title="Přihlásit">Přihlásit</a>{{?}}</li>
+    </ul>

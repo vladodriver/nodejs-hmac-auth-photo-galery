@@ -1,0 +1,21 @@
+{
+  "name": "ex3-photogallery",
+  "version": "0.20.2",
+  "private": true,
+  "main": "app.js",
+  "scripts": {
+    "start": "node --max-old-space-size=12 app.js"
+  },
+  "dependencies": {
+    "dot": "*",
+    "sqlite3": "*",
+    "multiparty": "*",
+    "express": "*"
+  },
+  "jshintConfig": {
+    "node":      true,
+    "strict":    true,
+    "indent":    2,
+    "browser":   true
+  }
+}

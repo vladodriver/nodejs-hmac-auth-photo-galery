@@ -1,0 +1,13 @@
+{{#def.loadfile('inc/layout.dot')}}
+{{##def.content:
+    <form id="login">
+      <p>Jméno: <span><input type="text" id="username"/></span></p>
+      <p id="namemsg">Napište své uživ. jméno ^</p>
+      <p>Heslo: <span><input type="password" id="password" /></span></p>
+      <p id="passmsg">Napište své heslo ^</p>
+      <input type="button" id="send" value="Odešli" />
+    </form>
+    <script src="/js/sjcl.js" type="text/javascript"></script>
+    <script src="/js/hauth.js" type="text/javascript"></script>
+    <script src="/js/login.js" type="text/javascript"></script>
+#}}

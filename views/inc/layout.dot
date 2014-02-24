@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <!--head-->
+{{#def.loadfile('inc/head.dot')}}
+  <!--body-->
+  <body>
+    <h1>{{=it.title}}</h1>
+    <!--menu-->
+{{#def.loadfile('inc/meny.dot')}}
+    <!--content-->
+{{#def.content}}
+    <!--footer-->
+{{#def.loadfile('inc/footer.dot')}}
+  </body>
+</html>
